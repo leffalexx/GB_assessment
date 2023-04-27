@@ -1,0 +1,34 @@
+Используя команду cat в терминале операционной системы Linux, создать два файла Домашние животные (заполнив файл собаками, кошками, хомяками) и Вьючные животными заполнив файл Лошадьми, верблюдами и ослы) 
+
+cat > Pets + (Enter) dogs, cats, hamsters + (Ctrl+D)
+cat > Cattle + (Enter) horses, camels, donkeys + (Ctrl+D)
+
+а затем объединить их
+
+cat Pets Cattle > Animals
+
+Просмотреть содержимое созданного файла
+
+nano Animals
+
+Переименовать файл, дав ему новое имя (Друзья человека)
+
+mv Animals HumanFriends
+
+Создать директорию, переместить файл туда
+
+mkdir Animals
+mv HumanFriends Animals/
+
+Подключить дополнительный репозиторий MySQL
+
+apt install mysql-server
+
+Установить и удалить deb-пакет с помощью dpkg
+wget https://download.docker.com/linux/ubuntu/dists/jammy/pool/stable/amd64/docker-ce-cli_20.10.13~3-0~ubuntu-jammy_amd64.deb
+dpkg -i docker-ce-cli_20.10.133-0ubuntu-jammy_amd64.deb
+dpkg -r docker-ce-cli_20.10.133-0ubuntu-jammy_amd64.deb
+
+mysql
+CREATE DATABASE HumanFriends;
+USE HumanFriends;
